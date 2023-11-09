@@ -10,20 +10,31 @@
     </head>
 
     <body class="body_bg">
-        <div class="galaxy"><a href="#">Kruph</a></div>
+        <div class="galaxy">
+            <audio
+                src="audio/shuttle_ship.mp3"
+                autoplay=""
+                allow="autoplay"
+                id="ship"
+            >
+                Your browser does not support the audio element.
+            </audio>
+            <a href="#" onclick="startAud()">Kruph</a>
+        </div>
 
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
                 >&times;</a
             >
-            <a href="about.html">About</a>
-            <a href="index.html">Home</a>
-            <a href="articles.html">Reiew</a>
-            <a href="contact.html">Contact</a>
+            <a href="about.html">ABOUT</a>
+            <a href="index.html">HOME</a>
+            <a href="articles.html">REVIEW</a>
+            <a href="contact.html">CONTACT</a>
         </div>
 
         <div id="main">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </div>
+        <!-- <embed src="audio/shuttle_ship.mp3" autostart="true" loop="false" /> -->
     </body>
 </html>
