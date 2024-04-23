@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
 
     // API URL
     const base =
-        `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
         `lon=${lon}&appid=${api}`;
 
     // Calling the API
