@@ -106,6 +106,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    height: 50%;
 }
 
 .cv {
@@ -166,6 +167,35 @@
     text-align: center;
     font-size: 1vw;
     text-align: center;
+}
+
+.displayMinblock {
+    height: 35vh;
+    width: 35vh;
+    text-align: center;
+    color: white;
+    font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
+    border: 2px solid rgb(176, 176, 176);
+    display: inline-block;
+    /* float: right; */
+    /* padding-top: 12px;
+    border-radius: 16px;
+    */
+}
+
+.characters {
+    position: absolute;
+    background-color: beige;
+    height: 35vh;
+    width: 35vh;
+    /* text-align: center; */
+    color: black;
+    /* font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif; */
+    border: 2px solid rgb(176, 176, 176);
+    display: inline;
+    /* padding-top: 12px;
+    border-radius: 16px;
+    */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
