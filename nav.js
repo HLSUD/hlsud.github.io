@@ -18,6 +18,29 @@ function startAud() {
     document.getElementById("ship").play();
 }
 
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("img_display");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    //   let dots = document.getElementsByClassName("dot");
+    //   for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+    //   dots[slideIndex-1].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
 // weather block
 let temperature = document.querySelector(".temp");
 let summary = document.querySelector(".summary");
@@ -38,13 +61,9 @@ window.addEventListener("load", () => {
     const lon = 114.1694;
     const lat = 22.3193;
 
-    // API ID
-    const api = "a4eb5f65cf6ec29987e2bb4c6b93a387";
-
     // API URL
     const base =
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
-        `lon=${lon}&appid=${api}`;
+        "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en";
 
     // Calling the API
     fetch(base)
@@ -53,13 +72,14 @@ window.addEventListener("load", () => {
         })
         .then((data) => {
             console.log(data);
-            temperature.innerText = Math.floor(data.main.temp - kelvin) + "°C";
-            summary.innerText = data.weather[0].description;
-            loc.innerText = data.name + "," + data.sys.country;
-            /* Set icon
-            let icon1 = data.weather[0].icon;
-            */
-            icon.innerHTML = `<img src="icons/weather.svg" style= 'height:5rem'/>`;
+            temperature.innerText =
+                Math.floor(data.temperature.data[16].value) + "°C";
+            summary.innerText = data.warningMessage[0];
+            loc.innerText = data.temperature.data[16].place;
+            // Set icon
+            let icon1 = data.icon[0];
+
+            icon.innerHTML = `<img src="https://www.hko.gov.hk/images/HKOWxIconOutline/pic${icon1}.png" style= 'height:5rem'/>`;
         });
     // });
     // }

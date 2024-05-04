@@ -144,7 +144,7 @@
     color: gray;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 50%;
     height: 2.5rem;
     font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
 }
@@ -170,32 +170,33 @@
 }
 
 .displayMinblock {
-    height: 35vh;
-    width: 35vh;
-    text-align: center;
-    color: white;
-    font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
-    border: 2px solid rgb(176, 176, 176);
+    height: 300px;
+    width: 300px;
     display: inline-block;
+    border-radius: 5%;
     /* float: right; */
     /* padding-top: 12px;
     border-radius: 16px;
     */
 }
 
-.characters {
-    position: absolute;
-    background-color: beige;
-    height: 35vh;
-    width: 35vh;
-    /* text-align: center; */
+.img_display {
     color: black;
-    /* font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif; */
+    position: absolute;
+}
+
+.weather_dispay {
+    float: right;
+    text-align: center;
+    color: white;
+    font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
     border: 2px solid rgb(176, 176, 176);
-    display: inline;
-    /* padding-top: 12px;
-    border-radius: 16px;
-    */
+}
+
+.photo_style {
+    width: 500px;
+    height: auto;
+    border-radius: 5%;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -208,6 +209,29 @@
     }
 }
 
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .weather_dispay {
+        display: none;
+    }
+    .img_display {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        position: initial;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .galaxy {
         font-size: medium;
@@ -217,6 +241,27 @@
         font-size: medium;
     }
     .about-contact {
-        font-size: 8px;
+        font-size: 12px;
+    }
+    .about-text {
+        font-size: 12px;
+        width: 80%;
+    }
+    .photo_style {
+        width: 300px;
+    }
+    .weather_dispay {
+        display: none;
+    }
+    .center {
+        width: 80%;
+    }
+    .img_display {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        position: initial;
     }
 }
