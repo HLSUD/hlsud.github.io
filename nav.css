@@ -142,9 +142,9 @@
 
 .page-footer {
     color: gray;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
-    width: 50%;
+    /* width: 50%; */
     height: 2.5rem;
     font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
 }

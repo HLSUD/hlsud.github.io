@@ -74,7 +74,7 @@ window.addEventListener("load", () => {
             console.log(data);
             temperature.innerText =
                 Math.floor(data.temperature.data[16].value) + "°C";
-            summary.innerText = data.warningMessage[0];
+            // summary.innerText = data.warningMessage[0];
             loc.innerText = data.temperature.data[16].place;
             // Set icon
             let icon1 = data.icon[0];
