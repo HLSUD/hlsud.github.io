@@ -1,107 +1,161 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Honghao Liu</title>
+        <title>CV / Honghao Liu</title>
         <link rel="shortcut icon" href="image/icon2.ico" />
         <link rel="stylesheet" href="nav.css" />
     </head>
 
-    <body style="background-color: rgba(0, 0, 0)">
-        <div class="galaxy">
-            <a href="#">Honghao Liu</a>
-        </div>
-        <!-- # -- Navigation -- -->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
+    <body>
+        <header class="site-header">
+            <a class="site-mark" href="index.html">Honghao Liu</a>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="site-nav"
             >
-            <a href="about.html">ABOUT</a>
-            <a href="index.html">HOME</a>
-            <a href="articles.html">BLOG</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
+                <span class="nav-icon" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html" aria-current="page">CV</a>
+                <a href="articles.html">Publications</a>
+                <a href="notes.html">Notes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
-
-        <!-- photo email and tel -->
-        <section>
-            <div style="display: inline-block"></div>
-            <img
-                class="center"
-                src="image/photo.jpg"
-                alt=""
-                style="width: 200px; height: 256px; border-radius: 5%"
-            /><br />
-
-            <div style="margin-left: 20pt; margin-top: -20pt" class="cv">
-                <p style="color: white" class="about-contact">
-                    [Email]: stein.h.liu@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;
-                    [Github]: https://github.com/HLSUD &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="resume.pdf" target="_blank">[CV]</a>
+        <main>
+            <section class="page-intro">
+                <p class="eyebrow">Curriculum Vitae</p>
+                <h1>Academic experience</h1>
+                <p>
+                    Covering education, research, industry work, awards, and
+                    skills.
                 </p>
-            </div>
+                <a
+                    class="text-link"
+                    href="resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Download full CV</a
+                >
+            </section>
 
-            <hr color="gray" width="50%" />
-        </section>
+            <section
+                class="section timeline-section"
+                aria-labelledby="education-title"
+            >
+                <h2 id="education-title">Education</h2>
+                <div class="timeline">
+                    <article>
+                        <span>2024 - present</span>
+                        <h3>Ph.D. in Artificial Intelligence</h3>
+                        <p>
+                            Hong Kong University of Science and Technology
+                            (Guangzhou). Supervisor: Lionel Ni.
+                        </p>
+                    </article>
+                    <article>
+                        <span>2020 - 2022</span>
+                        <h3>MPhil in Data Science and Analytics</h3>
+                        <p>
+                            Hong Kong University of Science and Technology.
+                            Supervisors: Qiong Luo and Yang Xiang.
+                        </p>
+                    </article>
+                    <article>
+                        <span>2016 - 2020</span>
+                        <h3>BEng in Computer Science</h3>
+                        <p>Wuhan University of Technology.</p>
+                    </article>
+                </div>
+            </section>
 
-        <!-- about me text  -->
-        <section class="about-text">
-            <p>
-                Research Interest: <br />
-                - Brain-Inspired Cognitive Models <br />
-                - Trustworthy AI <br />
-                - Neural representation <br />
-            </p>
-            <p>
-                Hobbies: <br />
-                - Cooking <br />
-                - Pixel art <br />
-                - Alternative Music
-            </p>
-        </section>
+            <section
+                class="section timeline-section"
+                aria-labelledby="experience-title"
+            >
+                <h2 id="experience-title">Experience</h2>
+                <div class="timeline">
+                    <article>
+                        <span>2024 - present</span>
+                        <h3>
+                            Research Intern, International Digital Economy
+                            Academy
+                        </h3>
+                        <p>
+                            Privacy-preserving data synthesis for continual LLM
+                            pretraining, including FlowHarm for measuring safety
+                            in agentic workflow generation.
+                        </p>
+                    </article>
+                    <article>
+                        <span>2023 - 2024</span>
+                        <h3>
+                            Research Assistant, City University of Hong Kong
+                        </h3>
+                        <p>
+                            Designed EEG and fMRI workflows for multi-talker
+                            speech decoding and preprocessing with fMRIPrep and
+                            QSIPrep.
+                        </p>
+                    </article>
+                    <article>
+                        <span>2022</span>
+                        <h3>Research Intern, DJI</h3>
+                        <p>
+                            Implemented CUDA C utility functions for autonomous
+                            vehicle perception algorithms and collaborated with
+                            high-performance computing and perception teams.
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-        <section class="center" style="margin-top: 10; margin-bottom: 10">
-            <!-- view  -->
-            <img
-                src="image/view_hk.jpg"
-                alt=""
-                class="displayMinblock img_display fade"
-            />
-            <img
-                src="image/dwi2.jpg"
-                alt=""
-                class="displayMinblock img_display fade"
-            />
-            <!-- <img
-                src="image/dwi4.jpg"
-                alt=""
-                class="displayMinblock img_display fade"
-            /> -->
-            <img
-                src="image/dirty_astro2.jpg"
-                alt=""
-                class="displayMinblock img_display fade"
-            />
-            <img
-                src="image/name_pixel.jpg"
-                alt=""
-                class="displayMinblock img_display fade"
-            />
+            <section
+                class="section split-section compact"
+                aria-labelledby="skills-title"
+            >
+                <div>
+                    <p class="section-kicker">Skills</p>
+                    <h2 id="skills-title">Computing and language</h2>
+                </div>
+                <div class="two-column-list">
+                    <div>
+                        <h3>Technical</h3>
+                        <p>
+                            Python, C++, CUDA C, MPI, Linux, Git,
+                            multi-threading, LaTeX, Solidity.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Languages</h3>
+                        <p>Mandarin Chinese, English.</p>
+                    </div>
+                    <div>
+                        <h3>Awards</h3>
+                        <p>HKUST Scholarship, HKUST Guangzhou Scholarship...</p>
+                    </div>
+                    <div>
+                        <h3>Teaching</h3>
+                        <p>
+                            Teaching assistant for Parallel Programming,
+                            Reinforcement Learning and Optimization.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-            <!-- weather -->
-            <div class="displayMinblock weather_dispay">
-                <div class="icon" style="margin-top: 10">---</div>
-                <h1 class="temp">-°C</h1>
-                <p class="location"></p>
-            </div>
-        </section>
-
-        <!-- <section class="center" style="height: 20%">
-            <div style="display: block; position: absolute"></div>
-        </section> -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Honghao Liu</p>
+            <a href="mailto:stein.h.liu@gmail.com">stein.h.liu@gmail.com</a>
+        </footer>
 
         <script src="nav.js"></script>
     </body>

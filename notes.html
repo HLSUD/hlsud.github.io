@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes / Honghao Liu</title>
+        <link rel="shortcut icon" href="image/icon2.ico" />
+        <link rel="stylesheet" href="nav.css" />
+    </head>
 
-<body>
-    <h1>Resources</h1>
-    <h3>
-      There are some notes and videos to study Radio Astronomy.
-    </h3>
+    <body>
+        <header class="site-header">
+            <a class="site-mark" href="index.html">Honghao Liu</a>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="site-nav"
+            >
+                <span class="nav-icon" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">CV</a>
+                <a href="articles.html">Publications</a>
+                <a href="notes.html" aria-current="page">Notes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <h2>Notes</h2>
-    <ul>
-      <li>Fourier Transfrom &nbsp&nbsp&nbsp<a href="NOTES_PDF/Fourier.pdf">FT</a></li>
-      <li>Radio Astronomy &nbsp&nbsp&nbsp<a href="https://web.njit.edu/~gary/728/">&nbspRA</a></li>
-    </ul>
-    <h2>Videos</h2>
-    <ul>
-      <li>Fourier Analysis &nbsp&nbsp&nbsp<a href="https://www.youtube.com/playlist?list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC">FA</a></li>
+        <main>
+            <section class="page-intro">
+                <p class="eyebrow">Notes</p>
+                <h1>Study resources</h1>
+                <p>
+                    A small archive of learning material, kept as a practical
+                    reference rather than a blog feed.
+                </p>
+            </section>
 
-    </ul>
-</body>
+            <section class="section resource-list" aria-label="Resources">
+                <article>
+                    <span>PDF</span>
+                    <h2>Fourier Transform</h2>
+                    <a href="NOTES_PDF/Fourier.pdf">Open note</a>
+                </article>
+                <article>
+                    <span>Course</span>
+                    <h2>Radio Astronomy</h2>
+                    <a href="https://web.njit.edu/~gary/728/" target="_blank" rel="noreferrer">Open resource</a>
+                </article>
+                <article>
+                    <span>Video</span>
+                    <h2>Fourier Analysis</h2>
+                    <a
+                        href="https://www.youtube.com/playlist?list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Open playlist
+                    </a>
+                </article>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Honghao Liu</p>
+            <a href="mailto:stein.h.liu@gmail.com">stein.h.liu@gmail.com</a>
+        </footer>
+
+        <script src="nav.js"></script>
+    </body>
 </html>

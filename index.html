@@ -1,40 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kruph</title>
+        <meta
+            name="description"
+            content="Honghao Liu, Ph.D. student in Artificial Intelligence at HKUST(Guangzhou), working on trustworthy AI, privacy-preserving LLMs, and neural speech decoding."
+        />
+        <title>Honghao Liu</title>
         <link rel="shortcut icon" href="image/icon2.ico" />
-        <link rel="stylesheet" href="nav.css" />
-        <script src="nav.js"></script>
+        <link rel="stylesheet" href="nav.css?v=static-hero" />
     </head>
 
-    <body class="body_bg">
-        <div class="galaxy">
-            <audio
-                src="audio/shuttle_ship.mp3"
-                autoplay=""
-                allow="autoplay"
-                id="ship"
+    <body>
+        <header class="site-header">
+            <a class="site-mark" href="index.html">Honghao Liu</a>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="site-nav"
             >
-                Your browser does not support the audio element.
-            </audio>
-            <a href="#" onclick="startAud()">Kruph</a>
-        </div>
+                <span class="nav-icon" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">CV</a>
+                <a href="articles.html">Publications</a>
+                <a href="notes.html">Notes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
+        <main>
+            <section class="hero academic-hero" aria-labelledby="home-title">
+                <div class="hero-inner">
+                    <p class="eyebrow">AI Ph.D. Student</p>
+                    <h1 id="home-title">Honghao Liu</h1>
+                    <p class="hero-subtitle">
+                        I study trustworthy AI, agentic AI, and computational
+                        neuroscience.
+                    </p>
+                    <div class="hero-links" aria-label="Profile links">
+                        <a href="resume.pdf" target="_blank" rel="noreferrer"
+                            >CV</a
+                        >
+                        <a
+                            href="https://github.com/HLSUD"
+                            target="_blank"
+                            rel="noreferrer"
+                            >GitHub</a
+                        >
+                        <a
+                            href="https://scholar.google.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Google Scholar</a
+                        >
+                        <a href="mailto:stein.h.liu@gmail.com">Email</a>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="section split-section"
+                aria-labelledby="research-title"
             >
-            <a href="about.html">ABOUT</a>
-            <a href="index.html">HOME</a>
-            <a href="articles.html">BLOG</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
+                <div>
+                    <p class="section-kicker">Research</p>
+                    <h2 id="research-title">
+                        Cognitive systems, secure data and models, and swarm for
+                        future prediction.
+                    </h2>
+                </div>
+                <div class="feature-list">
+                    <article>
+                        <h3>Trustworthy AI</h3>
+                        <p>
+                            Safety and robustness for large reasoning models,
+                            including conflict-driven attack analysis and
+                            agentic workflow generation benchmarks.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Privacy-Preserving LLMs</h3>
+                        <p>
+                            Entity-based encrypted synthetic data for continual
+                            pretraining while protecting personally identifiable
+                            information.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Neural Representation</h3>
+                        <p>
+                            EEG and fMRI workflows for multi-talker speech
+                            analysis from brain activity.
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
-        <!-- <embed src="audio/shuttle_ship.mp3" autostart="true" loop="false" /> -->
+            <section
+                class="section publication-strip"
+                aria-labelledby="selected-title"
+            >
+                <div class="strip-header">
+                    <p class="section-kicker">Selected Publications</p>
+                    <a href="articles.html">View all</a>
+                </div>
+                <h2 id="selected-title">Recent work</h2>
+                <ol class="publication-list">
+                    <li>
+                        <span>2026</span>
+                        <p>
+                            <strong
+                                >Conflicts Make Large Reasoning Models
+                                Vulnerable to Attacks.</strong
+                            >
+                            ACL Findings.
+                        </p>
+                    </li>
+                    <li>
+                        <span>2026</span>
+                        <p>
+                            <strong
+                                >Continual Pretraining on Encrypted Synthetic
+                                Data for Privacy-Preserving LLMs.</strong
+                            >
+                            EACL findings.
+                        </p>
+                    </li>
+                    <li>
+                        <span>2026</span>
+                        <p>
+                            <strong>A Survey on LLM-as-a-Judge.</strong>
+                            The Innovation.
+                        </p>
+                    </li>
+                </ol>
+            </section>
+
+            <section
+                class="section profile-section"
+                aria-labelledby="profile-title"
+            >
+                <img src="image/photo.jpg" alt="Portrait of Honghao Liu" />
+                <div>
+                    <p class="section-kicker">Current</p>
+                    <h2 id="profile-title">
+                        Ph.D. student at HKUST(GuangZhou), Artificial
+                        Intelligence.
+                    </h2>
+                    <p>
+                        I am supervised by
+                        <a
+                            href="https://seng.hkust.edu.hk/about/people/faculty/lionel-ming-shuan-ni"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Prof. Lionel Ni
+                        </a>
+                        and currently work as a research intern at the
+                        International Digital Economy Academy in Shenzhen.
+                        Previously, I completed an MPhil in Data Science and
+                        Analytics at HKUST supervised by
+                        <a
+                            href="https://seng.hkust.edu.hk/about/people/faculty/qiong-luo"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Prof. Qiong Luo
+                        </a>
+                        and a BEng in Computer Science at Wuhan University of
+                        Technology.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Honghao Liu</p>
+            <a href="mailto:stein.h.liu@gmail.com">stein.h.liu@gmail.com</a>
+        </footer>
+
+        <script src="nav.js"></script>
     </body>
 </html>

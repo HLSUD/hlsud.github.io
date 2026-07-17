@@ -1,30 +1,134 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Honghao Liu</title>
+        <title>Publications / Honghao Liu</title>
         <link rel="shortcut icon" href="image/icon2.ico" />
         <link rel="stylesheet" href="nav.css" />
-        <script src="nav.js"></script>
     </head>
 
-    <body style="background-color: black">
-        <!-- <div class="galaxy"><a href="#">Honghao Liu</a></div> -->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
+    <body>
+        <header class="site-header">
+            <a class="site-mark" href="index.html">Honghao Liu</a>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="site-nav"
             >
-            <a href="about.html">ABOUT</a>
-            <a href="index.html">HOME</a>
-            <a href="articles.html">BLOG</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
+                <span class="nav-icon" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">CV</a>
+                <a href="articles.html" aria-current="page">Publications</a>
+                <a href="notes.html">Notes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
-        <h1>Articles</h1>
-        <h3 style="color: white; text-align: center">N/A</h3>
-        <ol></ol>
+        <main>
+            <section class="page-intro">
+                <p class="eyebrow">Publications</p>
+                <h1>Research output</h1>
+                <p>
+                    Work across trustworthy AI, privacy-preserving language
+                    models, neural speech decoding, and high-performance
+                    scientific computing.
+                </p>
+            </section>
+
+            <section class="section" aria-label="Publication list">
+                <ol class="publication-list detailed">
+                    <li>
+                        <span>2026</span>
+                        <p>
+                            <strong
+                                >Conflicts Make Large Reasoning Models
+                                Vulnerable to Attacks.</strong
+                            >
+                            H. Liu, C. Xu, X. Jiang, C. Yang, S. Yin, Z. Ma, L.
+                            Ni, and J. Guo.
+                            <a
+                                href="https://aclanthology.org/2026.findings-acl.463/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >ACL Findings</a
+                            >, pages 9509-9531.
+                        </p>
+                    </li>
+                    <li>
+                        <span>2026</span>
+                        <p>
+                            <strong
+                                >Continual Pretraining on Encrypted Synthetic
+                                Data for Privacy-Preserving LLMs.</strong
+                            >
+                            H. Liu, X. Jiang, C. Xu, C. Yang, Y. Cheng, L. Ni,
+                            and J. Guo.
+                            <a
+                                href="https://aclanthology.org/2026.findings-eacl.21/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >EACL Findings</a
+                            >, pages 408-425.
+                        </p>
+                    </li>
+                    <li>
+                        <span>2026</span>
+                        <p>
+                            <strong>A Survey on LLM-as-a-Judge.</strong>
+                            J. Gu, X. Jiang, Z. Shi, H. Tan, X. Zhai, C. Xu, W.
+                            Li, Y. Shen, S. Ma, H. Liu, S. Wang, K. Zhang, Y.
+                            Wang, W. Gao, L. Ni, and J. Guo.
+                            <a
+                                href="https://doi.org/10.1016/j.xinn.2025.101253"
+                                target="_blank"
+                                rel="noreferrer"
+                                >The Innovation</a
+                            >. doi: 10.1016/j.xinn.2025.101253.
+                        </p>
+                    </li>
+                    <li>
+                        <span>2024</span>
+                        <p>
+                            <strong
+                                >Decoding multi-talker speech from EEG
+                                signals.</strong
+                            >
+                            H. Liu, K. Li, Q. Zhou, Q. Wang, J. Sun, Z. Huang,
+                            and J. Li. IJCAI Workshop on Human Brain and
+                            Artificial Intelligence.
+                        </p>
+                    </li>
+                    <li>
+                        <span>2022</span>
+                        <p>
+                            <strong
+                                >Efficient Radio Interferometric Imaging on the
+                                GPU.</strong
+                            >
+                            H. Liu, Q. Luo, and F. Wang. IEEE 18th International
+                            Conference on
+                            <a
+                                href="https://ieeexplore.ieee.org/document/9973466/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >e-Science</a
+                            >. doi: 10.1109/eScience55777.2022.00024.
+                        </p>
+                    </li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Honghao Liu</p>
+            <a href="mailto:stein.h.liu@gmail.com">stein.h.liu@gmail.com</a>
+        </footer>
+
+        <script src="nav.js"></script>
     </body>
 </html>

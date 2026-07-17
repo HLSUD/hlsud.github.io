@@ -1,59 +1,80 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Honghao Liu</title>
+        <title>Contact / Honghao Liu</title>
         <link rel="shortcut icon" href="image/icon2.ico" />
         <link rel="stylesheet" href="nav.css" />
-        <script src="nav.js"></script>
     </head>
 
-    <body style="background-color: rgba(0, 0, 0)">
-        <div class="galaxy"><a href="#">Honghao Liu</a></div>
-        # -- Navigation --
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
+    <body>
+        <header class="site-header">
+            <a class="site-mark" href="index.html">Honghao Liu</a>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="site-nav"
             >
-            <a href="about.html">ABOUT</a>
-            <a href="index.html">HOME</a>
-            <a href="articles.html">BLOG</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
+                <span class="nav-icon" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">CV</a>
+                <a href="articles.html">Publications</a>
+                <a href="notes.html">Notes</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+        </header>
 
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
-        <div class="center" style="color: white">
-            <div
-                style="
-                    font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
-                "
-            >
-                <h1>Honghao LIU</h1>
-                <p>Email: stein.h.liu@gmail.com</p>
-                <p>Phone: +852 65024131</p>
+        <main>
+            <section class="page-intro">
+                <p class="eyebrow">Contact</p>
+                <h1>Let us talk research.</h1>
                 <p>
-                    Address: IDEA, Shihua Rd, Futian District, Shenzhen, China
-                    (粤港澳大湾区数字经济研究院)
+                    I am based between Hong Kong, Guangzhou, and Shenzhen, with
+                    current research activity at HKUST (Guangzhou) and IDEA.
                 </p>
-            </div>
-            <div>
-                <iframe
-                    float="right"
-                    display="inline;"
-                    width="80%"
-                    height="80%"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4002.500045840217!2d114.05316202606635!3d22.506593748174026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f6b64f4c2093%3A0xdd344695be6ad22b!2z5rex5Zyz6ZW_5a-M6YeR6IyC5aSn5Y6m!5e0!3m2!1sen!2sae!4v1725682034065!5m2!1sen!2sae"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-            </div>
-            <p class="page-footer">&copy; Copyright 2024 Honghao Liu</p>
-        </div>
+            </section>
 
-        <!-- <footer color="gray">&copy; Honghao Liu</footer> -->
+            <section class="section contact-grid" aria-label="Contact details">
+                <article>
+                    <h2>Email</h2>
+                    <a href="mailto:stein.h.liu@gmail.com"
+                        >stein.h.liu@gmail.com</a
+                    >
+                </article>
+                <article>
+                    <h2>GitHub</h2>
+                    <a
+                        href="https://github.com/HLSUD"
+                        target="_blank"
+                        rel="noreferrer"
+                        >github.com/HLSUD</a
+                    >
+                </article>
+                <article>
+                    <h2>Research Base</h2>
+                    <p>
+                        International Digital Economy Academy, Shenzhen, China.
+                    </p>
+                </article>
+                <article>
+                    <h2>CV</h2>
+                    <a href="resume.pdf" target="_blank" rel="noreferrer"
+                        >Download resume.pdf</a
+                    >
+                </article>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Honghao Liu</p>
+            <a href="mailto:stein.h.liu@gmail.com">stein.h.liu@gmail.com</a>
+        </footer>
+
+        <script src="nav.js"></script>
     </body>
 </html>
