@@ -3,160 +3,261 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CV / Honghao Liu</title>
+        <meta
+            name="description"
+            content="Honghao Liu’s education and research experience at HKUST, Harvard Medical School, HKU, IDEA, CityU, and DJI."
+        />
+        <meta name="theme-color" content="#fcfbf8" />
+        <title>CV | Honghao Liu</title>
         <link rel="shortcut icon" href="image/icon2.ico" />
-        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="nav.css?v=20261023" />
+        <script src="nav.js?v=20261023"></script>
     </head>
-
     <body>
+        <a class="skip-link" href="#main">Skip to content</a>
         <header class="site-header">
-            <a class="site-mark" href="index.html">Honghao Liu</a>
-            <button
-                class="nav-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="site-nav"
-            >
-                <span class="nav-icon" aria-hidden="true"></span>
-            </button>
-            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html" aria-current="page">CV</a>
-                <a href="articles.html">Publications</a>
-                <a href="notes.html">Notes</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            <div class="header-inner">
+                <a class="site-mark" href="index.html">Honghao Liu</a>
+                <nav
+                    class="site-nav"
+                    id="site-nav"
+                    aria-label="Primary navigation"
+                >
+                    <a href="index.html">Home</a>
+                    <a href="articles.html">Publications</a>
+                    <a href="about.html" aria-current="page">CV</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false"
+                >
+                    <svg
+                        class="theme-moon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20 15.5A8.5 8.5 0 0 1 8.5 4a8.5 8.5 0 1 0 11.5 11.5Z"
+                        />
+                    </svg>
+                    <svg
+                        class="theme-sun"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+                        />
+                    </svg>
+                </button>
+                <button
+                    class="nav-toggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="site-nav"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                </button>
+            </div>
         </header>
-
-        <main>
+        <main id="main">
             <section class="page-intro">
-                <p class="eyebrow">Curriculum Vitae</p>
-                <h1>Academic experience</h1>
+                <p class="eyebrow">Curriculum vitae</p>
+                <h1>Experience &amp; education</h1>
                 <p>
-                    Covering education, research, industry work, awards, and
-                    skills.
+                    Research in trustworthy AI and agentic systems, grounded in
+                    neural computation and high-performance computing.
                 </p>
                 <a
                     class="text-link"
                     href="resume.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    >Download full CV</a
+                    >Download full CV ↗</a
                 >
             </section>
 
-            <section
-                class="section timeline-section"
-                aria-labelledby="education-title"
-            >
-                <h2 id="education-title">Education</h2>
+            <section class="section" aria-labelledby="education-title">
+                <div class="section-heading">
+                    <h2 id="education-title">Education</h2>
+                </div>
                 <div class="timeline">
                     <article>
-                        <span>2024 - present</span>
+                        <span class="timeline-date">Sep 2024 – present</span>
                         <h3>Ph.D. in Artificial Intelligence</h3>
-                        <p>
+                        <p class="position">
                             Hong Kong University of Science and Technology
-                            (Guangzhou). Supervisor: Lionel Ni.
+                            (Guangzhou)
                         </p>
+                        <p>Supervisor: Prof. Lionel Ni · GPA: 4.2/4.3</p>
                     </article>
                     <article>
-                        <span>2020 - 2022</span>
+                        <span class="timeline-date">Sep 2020 – Sep 2022</span>
                         <h3>MPhil in Data Science and Analytics</h3>
+                        <p class="position">
+                            Hong Kong University of Science and Technology
+                        </p>
                         <p>
-                            Hong Kong University of Science and Technology.
-                            Supervisors: Qiong Luo and Yang Xiang.
+                            Supervisors: Prof. Qiong Luo and Prof. Yang Xiang ·
+                            GPA: 3.7/4.3
                         </p>
                     </article>
                     <article>
-                        <span>2016 - 2020</span>
+                        <span class="timeline-date">Sep 2016 – Jun 2020</span>
                         <h3>BEng in Computer Science</h3>
-                        <p>Wuhan University of Technology.</p>
+                        <p class="position">Wuhan University of Technology</p>
+                        <p>GPA: 88.6/100</p>
                     </article>
                 </div>
             </section>
 
             <section
-                class="section timeline-section"
-                aria-labelledby="experience-title"
+                class="section"
+                aria-labelledby="research-experience-title"
             >
-                <h2 id="experience-title">Experience</h2>
+                <div class="section-heading">
+                    <h2 id="research-experience-title">Research experience</h2>
+                </div>
                 <div class="timeline">
                     <article>
-                        <span>2024 - present</span>
-                        <h3>
-                            Research Intern, International Digital Economy
-                            Academy
-                        </h3>
+                        <span class="timeline-date">Sep 2026 – present</span>
+                        <h3>Harvard Medical School</h3>
+                        <p class="position">
+                            Research Intern · Remote / Boston
+                        </p>
                         <p>
-                            Privacy-preserving data synthesis for continual LLM
-                            pretraining, including FlowHarm for measuring safety
-                            in agentic workflow generation.
+                            Hypothesis ranking with human–LLM co-evaluation and
+                            wet-lab validation. Developing an OpenCode plugin
+                            with agents for hypothesis generation and an
+                            evaluation framework.
                         </p>
                     </article>
                     <article>
-                        <span>2023 - 2024</span>
-                        <h3>
-                            Research Assistant, City University of Hong Kong
-                        </h3>
+                        <span class="timeline-date">Jun 2026 – present</span>
+                        <h3>The University of Hong Kong · NLP Lab</h3>
+                        <p class="position">Research Assistant · Hong Kong</p>
                         <p>
-                            Designed EEG and fMRI workflows for multi-talker
-                            speech decoding and preprocessing with fMRIPrep and
-                            QSIPrep.
+                            Automatic agent swarms for future prediction.
+                            Designing agent generation and coordination, with an
+                            OpenCode plugin as the execution harness.
                         </p>
                     </article>
                     <article>
-                        <span>2022</span>
-                        <h3>Research Intern, DJI</h3>
+                        <span class="timeline-date">Jan 2023 – May 2024</span>
+                        <h3>City University of Hong Kong</h3>
+                        <p class="position">
+                            Research Assistant, Computational Linguistics · Hong
+                            Kong
+                        </p>
                         <p>
-                            Implemented CUDA C utility functions for autonomous
-                            vehicle perception algorithms and collaborated with
-                            high-performance computing and perception teams.
+                            Collected EEG and fMRI data and preprocessed fMRI
+                            with fMRIPrep and QSIPrep. Designed a multi-talker
+                            speech decoding workflow, achieving BLEU-1 scores of
+                            21% under both single- and multi-talker conditions.
+                        </p>
+                    </article>
+                    <article>
+                        <span class="timeline-date">Oct 2020 – Sep 2022</span>
+                        <h3>Hong Kong University of Science and Technology</h3>
+                        <p class="position">
+                            GPU Radio Interferometric Imaging · Hong Kong
+                        </p>
+                        <p>
+                            Implemented the non-uniform Fourier transform
+                            (NUFFT) in CUDA, parallelized gridding and
+                            degridding, and optimized memory access, throughput,
+                            and load balancing.
                         </p>
                     </article>
                 </div>
             </section>
 
-            <section
-                class="section split-section compact"
-                aria-labelledby="skills-title"
-            >
-                <div>
-                    <p class="section-kicker">Skills</p>
-                    <h2 id="skills-title">Computing and language</h2>
+            <section class="section" aria-labelledby="work-title">
+                <div class="section-heading">
+                    <h2 id="work-title">Industry experience</h2>
+                </div>
+                <div class="timeline">
+                    <article>
+                        <span class="timeline-date">Sep 2024 – present</span>
+                        <h3>International Digital Economy Academy</h3>
+                        <p class="position">
+                            Research Intern, AI Agents &amp; Trustworthy AI ·
+                            Shenzhen
+                        </p>
+                        <p>
+                            Working on FlowHarm, a benchmark for safety in
+                            agentic workflow generation, and autonomous,
+                            self-refining workflows for real-world tasks.
+                            Proposed entity-based encrypted synthetic data for
+                            privacy-preserving continual LLM pretraining.
+                        </p>
+                    </article>
+                    <article>
+                        <span class="timeline-date">Jul 2022 – Sep 2022</span>
+                        <h3>DJI</h3>
+                        <p class="position">
+                            Research Intern, Autonomous Vehicle Perception ·
+                            Shenzhen
+                        </p>
+                        <p>
+                            Implemented GPU utilities in CUDA C for perception
+                            algorithms, collaborating with high-performance
+                            computing and perception teams. Applied the work to
+                            Kiwi vehicles.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="additional-title">
+                <div class="section-heading">
+                    <h2 id="additional-title">Additional information</h2>
                 </div>
                 <div class="two-column-list">
                     <div>
-                        <h3>Technical</h3>
+                        <h3>Technical skills</h3>
                         <p>
                             Python, C++, CUDA C, MPI, Linux, Git,
-                            multi-threading, LaTeX, Solidity.
+                            multithreading, LaTeX, Solidity.
                         </p>
                     </div>
                     <div>
                         <h3>Languages</h3>
-                        <p>Mandarin Chinese, English.</p>
+                        <p>Mandarin Chinese (native), English (fluent).</p>
                     </div>
                     <div>
                         <h3>Awards</h3>
-                        <p>HKUST Scholarship, HKUST Guangzhou Scholarship...</p>
+                        <ul>
+                            <li>
+                                Hong Kong University of Science and Technology
+                                Scholarship
+                            </li>
+                            <li>Wuhan University of Technology Scholarship</li>
+                        </ul>
                     </div>
                     <div>
-                        <h3>Teaching</h3>
-                        <p>
-                            Teaching assistant for Parallel Programming,
-                            Reinforcement Learning and Optimization.
-                        </p>
+                        <h3>Teaching &amp; coursework</h3>
+                        <ul>
+                            <li>Parallel Programming (Teaching Assistant)</li>
+                            <li>Advanced Algorithmic Techniques</li>
+                            <li>Computational Neuroscience (Summer School)</li>
+                            <li>Large Language Models: Theory and Practice</li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </main>
-
         <footer class="site-footer">
-            <p>&copy; 2026 Honghao Liu</p>
-            <a href="mailto:stein.h.liu@gmail.com">stein.h.liu@gmail.com</a>
+            <p>© 2026 Honghao Liu</p>
+            <span class="footer-note">Research, reasoning &amp; discovery</span>
+            <a href="mailto:stein.h.liu@gmail.com">Get in touch ↗</a>
         </footer>
-
-        <script src="nav.js"></script>
     </body>
 </html>

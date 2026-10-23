@@ -3,39 +3,78 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact / Honghao Liu</title>
+        <meta
+            name="description"
+            content="Contact Honghao Liu, Ph.D. student at HKUST (Guangzhou), about AI research and collaboration."
+        />
+        <meta name="theme-color" content="#fcfbf8" />
+        <title>Contact | Honghao Liu</title>
         <link rel="shortcut icon" href="image/icon2.ico" />
-        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="nav.css?v=20261023" />
+        <script src="nav.js?v=20261023"></script>
     </head>
-
     <body>
+        <a class="skip-link" href="#main">Skip to content</a>
         <header class="site-header">
-            <a class="site-mark" href="index.html">Honghao Liu</a>
-            <button
-                class="nav-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="site-nav"
-            >
-                <span class="nav-icon" aria-hidden="true"></span>
-            </button>
-            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">CV</a>
-                <a href="articles.html">Publications</a>
-                <a href="notes.html">Notes</a>
-                <a href="contact.html" aria-current="page">Contact</a>
-            </nav>
+            <div class="header-inner">
+                <a class="site-mark" href="index.html">Honghao Liu</a>
+                <nav
+                    class="site-nav"
+                    id="site-nav"
+                    aria-label="Primary navigation"
+                >
+                    <a href="index.html">Home</a>
+                    <a href="articles.html">Publications</a>
+                    <a href="about.html">CV</a>
+                    <a href="contact.html" aria-current="page">Contact</a>
+                </nav>
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false"
+                >
+                    <svg
+                        class="theme-moon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20 15.5A8.5 8.5 0 0 1 8.5 4a8.5 8.5 0 1 0 11.5 11.5Z"
+                        />
+                    </svg>
+                    <svg
+                        class="theme-sun"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+                        />
+                    </svg>
+                </button>
+                <button
+                    class="nav-toggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="site-nav"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                </button>
+            </div>
         </header>
-
-        <main>
+        <main id="main">
             <section class="page-intro">
                 <p class="eyebrow">Contact</p>
-                <h1>Let us talk research.</h1>
+                <h1>Let’s talk research.</h1>
                 <p>
-                    I am based between Hong Kong, Guangzhou, and Shenzhen, with
-                    current research activity at HKUST (Guangzhou) and IDEA.
+                    I am interested in trustworthy AI, agentic systems, and
+                    computational neuroscience. Email is the best way to reach
+                    me.
                 </p>
             </section>
 
@@ -43,7 +82,16 @@
                 <article>
                     <h2>Email</h2>
                     <a href="mailto:stein.h.liu@gmail.com"
-                        >stein.h.liu@gmail.com</a
+                        >stein.h.liu@gmail.com ↗</a
+                    >
+                </article>
+                <article>
+                    <h2>Google Scholar</h2>
+                    <a
+                        href="https://scholar.google.com/citations?user=27UxqC0AAAAJ&amp;hl=en"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Publications &amp; citations ↗</a
                     >
                 </article>
                 <article>
@@ -52,29 +100,47 @@
                         href="https://github.com/HLSUD"
                         target="_blank"
                         rel="noreferrer"
-                        >github.com/HLSUD</a
+                        >github.com/HLSUD ↗</a
                     >
                 </article>
                 <article>
-                    <h2>Research Base</h2>
-                    <p>
-                        International Digital Economy Academy, Shenzhen, China.
-                    </p>
-                </article>
-                <article>
-                    <h2>CV</h2>
+                    <h2>Curriculum vitae</h2>
                     <a href="resume.pdf" target="_blank" rel="noreferrer"
-                        >Download resume.pdf</a
+                        >Download full CV ↗</a
                     >
                 </article>
             </section>
+
+            <section class="section" aria-labelledby="affiliations-title">
+                <div class="section-heading">
+                    <h2 id="affiliations-title">Current affiliations</h2>
+                </div>
+                <div class="two-column-list">
+                    <div>
+                        <h3>HKUST (Guangzhou)</h3>
+                        <p>
+                            Ph.D. student in Artificial Intelligence<br />Guangzhou,
+                            China
+                        </p>
+                    </div>
+                    <div>
+                        <h3>HKUST</h3>
+                        <p>
+                            Research student in CCS at Big Data Institute<br />Hong
+                            Kong
+                        </p>
+                    </div>
+                    <div>
+                        <h3>International Digital Economy Academy</h3>
+                        <p>Research Intern<br />Shenzhen, China</p>
+                    </div>
+                </div>
+            </section>
         </main>
-
         <footer class="site-footer">
-            <p>&copy; 2026 Honghao Liu</p>
-            <a href="mailto:stein.h.liu@gmail.com">stein.h.liu@gmail.com</a>
+            <p>© 2026 Honghao Liu</p>
+            <span class="footer-note">Research, reasoning &amp; discovery</span>
+            <a href="mailto:stein.h.liu@gmail.com">Get in touch ↗</a>
         </footer>
-
-        <script src="nav.js"></script>
     </body>
 </html>
